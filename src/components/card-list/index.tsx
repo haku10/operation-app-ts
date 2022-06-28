@@ -7,12 +7,13 @@ type CardListProps = {
 const cards = ['test', 'rest', 'boot'];
 
 const CardList: React.FC<CardListProps> = ({ info }) => {
+  var count: number = 0;
   return (
     <div>
       <h2>{info}</h2>
-      <div>カードのタイトル</div>
-      {cards.map((item) => (
-          <div>{item}</div>
+      <h3>カードのタイトル</h3>
+      {cards?.map((item) => (
+        <div key={count++}>{item}</div>
       ))}
     </div>
   );

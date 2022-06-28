@@ -1,9 +1,7 @@
 /**
  *  Account
  */
-interface Account {
+export interface Account {
   email: string;
   name: string;
 }
-
-export default Account;
